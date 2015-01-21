@@ -1,25 +1,92 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Tap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="wXg-5b-KNi"/>
+                        <viewControllerLayoutGuide type="bottom" id="4te-36-4n3"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="q7W-e6-TWE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In 1908, New York City passes the Sullivan Ordinance making it illegal for women to smoke in public." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFg-Ia-a4H">
+                                <rect key="frame" x="16" y="309" width="382" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clD-kk-yjl">
+                                <rect key="frame" x="16" y="610" width="171" height="30"/>
+                                <color key="backgroundColor" red="0.2445530891418457" green="0.53061509132385254" blue="0.531982421875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="True">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedShowFacts" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LFh-X4-M7T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj3-cr-6IX">
+                                <rect key="frame" x="227" y="610" width="171" height="30"/>
+                                <color key="backgroundColor" red="0.99370640516281128" green="0.085574381053447723" blue="0.0070583987981081009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="False">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedFalse" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cho-NI-2uI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUo-Ha-aaW">
+                                <rect key="frame" x="368" y="686" width="30" height="30"/>
+                                <state key="normal" title="/">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressedPlayAgain" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0aw-i6-5Cd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rj3-cr-6IX" firstAttribute="leading" secondItem="clD-kk-yjl" secondAttribute="trailing" constant="40" id="0LO-t4-K0w"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="clD-kk-yjl" secondAttribute="trailing" constant="211" id="6Ns-T2-q05"/>
+                            <constraint firstItem="4te-36-4n3" firstAttribute="top" secondItem="clD-kk-yjl" secondAttribute="bottom" constant="96" id="7Nu-Fg-ZqS"/>
+                            <constraint firstItem="clD-kk-yjl" firstAttribute="top" secondItem="tFg-Ia-a4H" secondAttribute="bottom" constant="112" id="AvY-M3-H7f"/>
+                            <constraint firstItem="rj3-cr-6IX" firstAttribute="centerY" secondItem="clD-kk-yjl" secondAttribute="centerY" id="Ca4-5n-NfV"/>
+                            <constraint firstAttribute="centerX" secondItem="tFg-Ia-a4H" secondAttribute="centerX" id="FnR-jb-OmP"/>
+                            <constraint firstItem="tFg-Ia-a4H" firstAttribute="top" secondItem="wXg-5b-KNi" secondAttribute="bottom" constant="289" id="GQ8-a6-wKX"/>
+                            <constraint firstItem="clD-kk-yjl" firstAttribute="leading" secondItem="q7W-e6-TWE" secondAttribute="leadingMargin" id="HRD-3k-xl6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tFg-Ia-a4H" secondAttribute="trailing" id="JuA-mm-hNO"/>
+                            <constraint firstItem="rj3-cr-6IX" firstAttribute="width" secondItem="clD-kk-yjl" secondAttribute="width" id="ZyY-Cg-CUO"/>
+                            <constraint firstItem="tFg-Ia-a4H" firstAttribute="leading" secondItem="q7W-e6-TWE" secondAttribute="leadingMargin" id="e4H-PP-zzf"/>
+                            <constraint firstItem="rj3-cr-6IX" firstAttribute="trailing" secondItem="q7W-e6-TWE" secondAttribute="trailingMargin" id="j0u-Bj-kJH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="clD-kk-yjl" secondAttribute="trailing" constant="211" id="qly-Ye-kHK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6Ns-T2-q05"/>
+                                <exclude reference="AvY-M3-H7f"/>
+                                <exclude reference="qly-Ye-kHK"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="factLabel" destination="tFg-Ia-a4H" id="ihG-fZ-ZUI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="344" y="325"/>
         </scene>
     </scenes>
 </document>
