@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In 1908, New York City passes the Sullivan Ordinance making it illegal for women to smoke in public." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFg-Ia-a4H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In 1908, New York City passes the Sullivan Ordinance making it illegal for women to smoke in public." lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFg-Ia-a4H">
                                 <rect key="frame" x="16" y="309" width="382" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -26,7 +26,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clD-kk-yjl">
                                 <rect key="frame" x="16" y="610" width="171" height="30"/>
                                 <color key="backgroundColor" red="0.2445530891418457" green="0.53061509132385254" blue="0.531982421875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="True">
+                                <state key="normal" title="Previous">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -36,22 +36,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj3-cr-6IX">
                                 <rect key="frame" x="227" y="610" width="171" height="30"/>
-                                <color key="backgroundColor" red="0.99370640516281128" green="0.085574381053447723" blue="0.0070583987981081009" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="False">
+                                <color key="backgroundColor" red="0.15686274509803921" green="0.38823529411764707" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="pressedFalse" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cho-NI-2uI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUo-Ha-aaW">
-                                <rect key="frame" x="368" y="686" width="30" height="30"/>
-                                <state key="normal" title="/">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="pressedPlayAgain" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0aw-i6-5Cd"/>
                                 </connections>
                             </button>
                         </subviews>
