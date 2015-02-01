@@ -18,43 +18,59 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In 1908, New York City passes the Sullivan Ordinance making it illegal for women to smoke in public." lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFg-Ia-a4H">
-                                <rect key="frame" x="16" y="309" width="382" height="61"/>
+                                <rect key="frame" x="16" y="220" width="382" height="61"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clD-kk-yjl">
-                                <rect key="frame" x="16" y="610" width="171" height="30"/>
-                                <color key="backgroundColor" red="0.2445530891418457" green="0.53061509132385254" blue="0.531982421875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="676" width="183" height="44"/>
+                                <color key="backgroundColor" red="0.1214456781744957" green="0.46638107299804688" blue="0.24651199579238892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mlc-Fh-a3b"/>
+                                </constraints>
                                 <state key="normal" title="Previous">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pressedShowFacts" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LFh-X4-M7T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rj3-cr-6IX">
-                                <rect key="frame" x="227" y="610" width="171" height="30"/>
-                                <color key="backgroundColor" red="0.15686274509803921" green="0.38823529411764707" blue="0.38039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="215" y="676" width="183" height="44"/>
+                                <color key="backgroundColor" red="0.1214456781744957" green="0.46638107299804688" blue="0.24651199579238892" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IeV-gm-Isg"/>
+                                </constraints>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pressedFalse" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Cho-NI-2uI"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.29985174536705017" green="0.57192516326904297" blue="0.39867052435874939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rj3-cr-6IX" firstAttribute="leading" secondItem="clD-kk-yjl" secondAttribute="trailing" constant="40" id="0LO-t4-K0w"/>
+                            <constraint firstItem="rj3-cr-6IX" firstAttribute="leading" secondItem="clD-kk-yjl" secondAttribute="trailing" constant="16" id="0LO-t4-K0w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="clD-kk-yjl" secondAttribute="trailing" constant="211" id="6Ns-T2-q05"/>
-                            <constraint firstItem="4te-36-4n3" firstAttribute="top" secondItem="clD-kk-yjl" secondAttribute="bottom" constant="96" id="7Nu-Fg-ZqS"/>
+                            <constraint firstItem="4te-36-4n3" firstAttribute="top" secondItem="clD-kk-yjl" secondAttribute="bottom" constant="16" id="7Nu-Fg-ZqS"/>
                             <constraint firstItem="clD-kk-yjl" firstAttribute="top" secondItem="tFg-Ia-a4H" secondAttribute="bottom" constant="112" id="AvY-M3-H7f"/>
                             <constraint firstItem="rj3-cr-6IX" firstAttribute="centerY" secondItem="clD-kk-yjl" secondAttribute="centerY" id="Ca4-5n-NfV"/>
                             <constraint firstAttribute="centerX" secondItem="tFg-Ia-a4H" secondAttribute="centerX" id="FnR-jb-OmP"/>
-                            <constraint firstItem="tFg-Ia-a4H" firstAttribute="top" secondItem="wXg-5b-KNi" secondAttribute="bottom" constant="289" id="GQ8-a6-wKX"/>
+                            <constraint firstItem="tFg-Ia-a4H" firstAttribute="top" secondItem="wXg-5b-KNi" secondAttribute="bottom" constant="200" id="GQ8-a6-wKX"/>
                             <constraint firstItem="clD-kk-yjl" firstAttribute="leading" secondItem="q7W-e6-TWE" secondAttribute="leadingMargin" id="HRD-3k-xl6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tFg-Ia-a4H" secondAttribute="trailing" id="JuA-mm-hNO"/>
                             <constraint firstItem="rj3-cr-6IX" firstAttribute="width" secondItem="clD-kk-yjl" secondAttribute="width" id="ZyY-Cg-CUO"/>

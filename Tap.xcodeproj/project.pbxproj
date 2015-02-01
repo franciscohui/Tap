@@ -14,6 +14,7 @@
 		0B6665A91A6FD76F000369A5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B6665A71A6FD76F000369A5 /* LaunchScreen.xib */; };
 		0B6665B51A6FD76F000369A5 /* TapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6665B41A6FD76F000369A5 /* TapTests.swift */; };
 		0B6665C01A6FD78D000369A5 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6665BF1A6FD78D000369A5 /* File.swift */; };
+		0B7B195F1A7A640A00A57A48 /* BreakingTrivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7B195E1A7A640A00A57A48 /* BreakingTrivia.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		0B6665B31A6FD76F000369A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B6665B41A6FD76F000369A5 /* TapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapTests.swift; sourceTree = "<group>"; };
 		0B6665BF1A6FD78D000369A5 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		0B7B195E1A7A640A00A57A48 /* BreakingTrivia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BreakingTrivia.swift; path = ../BreakingTrivia.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,8 @@
 		0B6665901A6FD76F000369A5 = {
 			isa = PBXGroup;
 			children = (
-				0B6665BE1A6FD782000369A5 /* Playground */,
 				0B66659B1A6FD76F000369A5 /* Tap */,
+				0B6665BE1A6FD782000369A5 /* Playground */,
 				0B6665B11A6FD76F000369A5 /* TapTests */,
 				0B66659A1A6FD76F000369A5 /* Products */,
 			);
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				0B66659E1A6FD76F000369A5 /* AppDelegate.swift */,
+				0B7B195E1A7A640A00A57A48 /* BreakingTrivia.swift */,
 				0B6665A01A6FD76F000369A5 /* ViewController.swift */,
 				0B6665A21A6FD76F000369A5 /* Main.storyboard */,
 				0B6665A51A6FD76F000369A5 /* Images.xcassets */,
@@ -224,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B6665A11A6FD76F000369A5 /* ViewController.swift in Sources */,
+				0B7B195F1A7A640A00A57A48 /* BreakingTrivia.swift in Sources */,
 				0B6665C01A6FD78D000369A5 /* File.swift in Sources */,
 				0B66659F1A6FD76F000369A5 /* AppDelegate.swift in Sources */,
 			);
@@ -417,6 +421,7 @@
 				0B6665BA1A6FD76F000369A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B6665BB1A6FD76F000369A5 /* Build configuration list for PBXNativeTarget "TapTests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +430,7 @@
 				0B6665BD1A6FD76F000369A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
